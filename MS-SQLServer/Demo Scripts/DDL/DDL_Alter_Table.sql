@@ -1,0 +1,20 @@
+Use AutoMobileData
+
+---ALTER TABLE--
+ALTER TABLE Products
+ADD Description VARCHAR(100) NULL
+
+ALTER TABLE Products
+ALTER COLUMN Description VARCHAR(200) NULL
+
+ALTER TABLE Products
+DROP COLUMN Description
+
+ALTER TABLE Order_Item_Info
+DROP CONSTRAINT FK__Order_Ite__Produ__6EF57B66
+
+--TRUNCATE TABEL--
+TRUNCATE TABLE Customers
+
+---DROP TABLE--
+DROP TABLE Order_Item_Info

@@ -1,0 +1,24 @@
+{
+      name:"Scott Jhone",
+      birthDate:new Date(1990,5,6),
+      salary:45000.5,
+      score:0.87,
+      bio:'{"skills:["Angular","TypeScript","HTML"]}',
+      role:"Front-End Developer"
+    },
+     {
+      name:"Tiger buttler",
+      birthDate:new Date(1991,4,5),
+      salary:47000.5,
+      score:0.82,
+      bio:'{"skills:["Angular","TypeScript","HTML"]}',
+      role:"Front-End Developer"
+    },
+     {
+      name:"Smith Smack",
+      birthDate:new Date(1992,3,2),
+      salary:45000.5,
+      score:0.80,
+      bio:'{"skills:[".NET","MS-SQLServer","WebAPI"]}',
+      role:"Back-End Developer"
+    }

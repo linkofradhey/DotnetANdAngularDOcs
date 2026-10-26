@@ -1,0 +1,8 @@
+
+Use Master
+
+--TO CREATE A NEW DATABASE
+CREATE DATABASE AutoMobileData
+
+--TO DROP DATABASE--
+DROP DATABASE AutoMobileData

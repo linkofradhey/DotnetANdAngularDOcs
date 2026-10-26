@@ -1,0 +1,68 @@
+#######################################
+# Angular
+#######################################
+
+# Dependencies
+node_modules/
+
+# Angular build output
+dist/
+.angular/
+out-tsc/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (optional)
+src/environments/*.local.ts
+
+#######################################
+# .NET
+#######################################
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+#######################################
+# General
+#######################################
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+#######################################
+# ALLOW ZIP FILES
+#######################################
+
+!*.zip
+
+#######################################
+# ALLOW NOTES
+#######################################
+
+# Notes folder
+!Notes/
+!Notes/**
+
+# Notes files
+!*.txt
+!*.md
+!*.docx
+!*.pdf

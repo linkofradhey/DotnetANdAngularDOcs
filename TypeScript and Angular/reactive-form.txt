@@ -1,0 +1,32 @@
+<h2>Product Form (Reacive Form)</h2>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <label>ID:</label>
+    <input type="number" formControlName="id">
+    <div *ngIf="productForm.controls['id'].invalid && productForm.controls['id'].touched">
+        <small *ngIf="productForm.controls['id'].errors?.['required']">ID is required</small>
+    </div>
+    <br>
+    <label>NAME:</label>
+    <input type="text" formControlName="name">
+    <div *ngIf="productForm.controls['name'].invalid && productForm.controls['name'].touched">
+        <small *ngIf="productForm.controls['name'].errors?.['required']">NAME is required</small>
+         <small *ngIf="productForm.controls['name'].errors?.['minlength']">Minimum 3 char. is required</small>
+    </div>
+    <br>
+    <label>PRICE:</label>
+    <input type="number" formControlName="price">
+    <div *ngIf="productForm.controls['price'].invalid && productForm.controls['price'].touched">
+        <small *ngIf="productForm.controls['price'].errors?.['required']">Price is required</small>
+    </div>
+    <br>
+    <label>CATEGORY:</label>
+    <select formControlName="category">
+        <option value="">--Select Category</option>
+        <option *ngFor="let c of categories" [value]="c">{{c}}</option>
+    </select>
+    <div *ngIf="productForm.controls['category'].invalid && productForm.controls['category'].touched">
+        <small *ngIf="productForm.controls['category'].errors?.['required']">Category is required</small>
+    </div>
+    <br>
+    <button type="submit" [disabled]="productForm.invalid">Submit</button>
+</form>
